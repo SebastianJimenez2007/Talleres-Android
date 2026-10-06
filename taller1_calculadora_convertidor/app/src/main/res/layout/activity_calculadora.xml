@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ios_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora"
+            android:textSize="34sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            style="@style/IosCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etValorCredito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor del crédito"
+                android:inputType="numberDecimal"
+                android:background="@null"
+                android:padding="12dp"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#C6C6C8"
+                android:layout_marginHorizontal="12dp"/>
+
+            <EditText
+                android:id="@+id/etCuotas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de cuotas"
+                android:inputType="number"
+                android:background="@null"
+                android:padding="12dp"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#C6C6C8"
+                android:layout_marginHorizontal="12dp"/>
+
+            <EditText
+                android:id="@+id/etInteres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Interés mensual (%)"
+                android:inputType="numberDecimal"
+                android:background="@null"
+                android:padding="12dp"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            style="@style/IosButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            style="@style/IosCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvValorCuota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valor por cuota"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#C6C6C8"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/tvValorTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#C6C6C8"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/tvGananciaTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ganancia"
+                android:textSize="17sp"
+                android:textColor="@color/ios_blue"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

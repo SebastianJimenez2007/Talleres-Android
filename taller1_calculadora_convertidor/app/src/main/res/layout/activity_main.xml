@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@color/ios_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taller Android"
+        android:textSize="34sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/botonConvertidor"
+        style="@style/IosButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertidor de Moneda"
+        android:onClick="abrirConvertidor"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/botonCalculadora"
+        style="@style/IosButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Créditos"
+        android:onClick="abrirCalculadora"/>
+
+</LinearLayout>
